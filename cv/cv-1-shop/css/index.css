@@ -1,0 +1,16 @@
+@import url(../css/header/index.css);
+@import url(../css/header-2/index.css);
+@import url(./header-2/drop-dow-product/index.css);
+@import url(./header-2/drop-dow-shop/index.css);
+@import url(./slider-show-home/index.css);
+@import url(./body-1/index.css);
+@import url(./body-2/index.css);
+@import url(./header-3/index.css);
+@import url(./bottom/index.css);
+@import url(./about-us/index.css);
+@import url(./about-introduce/index.css);
+@import url(./about-our-team/index.css);
+@import url(./product/index.css);
+@import url(./contact/index.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');

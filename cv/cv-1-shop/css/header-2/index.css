@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,100;1,300;1,400&display=swap');
+.container-header-2{
+    position: sticky;
+    top: 0;
+    background-color: rgb(219, 221, 222);
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 0 8px;
+    max-width: 1300px;
+    margin: 5px auto;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.close-menu{
+    display: none;
+}
+
+.container-menu-header-2,
+.container-logo{
+    list-style: none;
+    display: flex;
+}
+
+
+.container-menu-header-2{
+    width: 600px;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-right: 35px;
+}
+
+.list-menu-header-2>a,
+.list-menu-header-2>span{
+    text-decoration:none;
+    color: #000000;
+}
+
+.list-menu-header-2:hover> a,
+.list-menu-header-2:hover> span{
+    color: red;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.container-logo{
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.cart{
+    cursor: pointer;
+    font-size: 20px;
+}
+.cart:hover{
+    color: rgb(176, 9, 9);
+}
+.logo>a,
+.brand-reponsive{
+    font-size: 40px;
+    text-align: center;
+    color: #111010;
+}
+
+.logo:hover a{
+    color: rgb(54, 54, 54);
+}
+
+.brand-reponsive{
+    display: none;
+}
+
+.menu-con{
+    position: relative;
+}
+
+#shop{
+    margin-right: 10px;
+}
+.uv::after{
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 9px;
+    top: 7px;
+    transform: rotate(-60deg);
+    transition: all 0.30s linear;
+}
+.uv::before{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 9px;
+    top: 7px;
+    left: 42px;
+    transform: rotate(60deg);
+    transition: all 0.30s linear;
+}
+
+.list-menu-header-2:hover > .uv::after{
+    transform: rotate(60deg);
+    border-color: red;
+}
+
+.list-menu-header-2:hover > .uv::before{
+    transform: rotate(-60deg);
+    border-color: red;
+}
+
+
+.menu-con-shop{
+    position: relative;
+}
+.vu::after{
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 9px;
+    top: 7px;
+    left: 15px;
+    transform: rotate(-60deg);
+    transition: all 0.30s linear;
+    
+}
+.vu::before{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 9px;
+    top: 7px;
+    left: 10px;
+    transform: rotate(60deg);
+    transition: all 0.30s linear;
+}
+
+.vu{
+    position: relative;
+}
+
+.list-menu-header-2:hover > .vu::after{
+    transform: rotate(60deg);
+    border-color: red;
+}
+
+.list-menu-header-2:hover > .vu::before{
+    transform: rotate(-60deg);
+    border-color: red;
+}
+
+
+
+@media screen and (max-width:687px) {
+    .ctn{
+        display: none;
+        animation-name: ctn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes ctn {
+        from{opacity: 0;}
+        to{opacity: 1;}
+    }
+
+    .container-logo{
+        width: 400px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .brand-reponsive{
+        display: block;
+    }
+
+    .container-menu-header-2{
+        display: block;
+        position: absolute;
+        left: 27%;
+        background-color: black;
+        color: #ffffff;
+        height: auto;
+        top: 100%;
+        width: 300px;
+        border-radius: 5px;
+        overflow: auto;
+    }
+
+    .container-menu-header-2>
+    .list-menu-header-2>a,.list-menu-header-2>span{
+        color: #ffffff;
+    }
+
+    .list-menu-header-2{
+        padding: 15px;
+    }
+
+
+    .container-header-2{
+        position: relative;
+    }
+
+    .close-menu{
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        transition: all 0.25s linear;
+    }
+
+    .close-menu:hover{
+        color: red;
+    }
+
+    .uv::after,
+    .uv::before,
+    .vu::after,
+    .vu::before{
+        border-color: #ffffff;
+    }
+
+    .uv{
+        position: relative;
+    }
+    .uv::after{
+        left: 5px;
+    }
+    .uv::before{
+        left: 0px;
+    }
+
+    .list-menu-header-2:hover > .vu::after{
+        transform: rotate(-60deg);
+        border-color: red;
+    }
+    
+    .list-menu-header-2:hover > .vu::before{
+        transform: rotate(60deg);
+        border-color: red;
+    }
+
+    .list-menu-header-2:hover > .uv::after{
+        transform: rotate(-60deg);
+        border-color: red;
+    }
+    
+    .list-menu-header-2:hover > .uv::before{
+        transform: rotate(60deg);
+        border-color: red;
+    }
+
+    .list-menu-header-2:hover>a{
+        color: red;
+    }
+
+
+    .container-header-2{
+        position: sticky;
+        top: 0;
+       
+    }
+}
+
+@media screen and (max-width:420px) {
+    .container-menu-header-2{
+        left: 0;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+}
